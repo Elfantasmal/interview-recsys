@@ -7,5 +7,5 @@ package com.rrdssfgcs.interviewcheatsheet.data.spider;
  * @time 2017-09-29 21:56
  **/
 public abstract class BaseSpider {
-    protected abstract String getFromUrl(String url);
+    protected abstract String getFromUrlAndSaveToFileByTitle(String url, String cssQueryTitle, String cssQueryContent);
 }
