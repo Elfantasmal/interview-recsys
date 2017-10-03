@@ -1,15 +1,14 @@
 package com.rrdssfgcs.interviewcheatsheet.data.spider;
 
+import org.junit.Test;
+
 public class NowcoderSpiderTest {
     NowcoderSpider nowcoderSpider = new NowcoderSpider();
 
-    @org.junit.Test
-    public void getFromUrlAndSaveToFileByTitle() throws Exception {
-
-//        nowcoderSpider.getFromUrlAndSaveToFileByTitle();
-
+    @Test
+    public void getArticleFromUrl() throws Exception {
+        //TODO
+        System.out.println(nowcoderSpider.getArticleFromUrl("").toString());
     }
 
 }
-
-//    private static final Logger logger = LogManager.getLogger(NowcoderSpider.class);

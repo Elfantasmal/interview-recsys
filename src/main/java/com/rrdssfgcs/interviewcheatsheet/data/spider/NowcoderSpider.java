@@ -1,12 +1,14 @@
 package com.rrdssfgcs.interviewcheatsheet.data.spider;
 
-import com.rrdssfgcs.interviewcheatsheet.utils.FileUtils;
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -15,11 +17,21 @@ import java.io.IOException;
  * @author parker
  * @time 2017-09-29 22:09
  **/
+
 public class NowcoderSpider extends BaseSpider {
 
-    protected String getFromUrlAndSaveToFileByTitle(String url, String cssQueryTitle, String cssQueryContent) {
-        if (StringUtils.isBlank(url) || StringUtils.isBlank(cssQueryTitle) || StringUtils.isBlank(cssQueryContent)) {
-            return null;
+    public void update() {
+
+        List<String> urls = getUrls("");
+        if (!CollectionUtils.isEmpty(urls)) {
+            urls.forEach(u -> saveArticleToDatabase(getArticleFromUrl(u)));
+        }
+    }
+
+    public Article getArticleFromUrl(String url) {
+        Article article = new Article();
+        if (StringUtils.isBlank(url)) {
+            return article;
         }
         Document doc = null;
         try {
@@ -28,14 +40,32 @@ public class NowcoderSpider extends BaseSpider {
             e.printStackTrace();
         }
 
-        Elements newsTitle = doc.select(cssQueryTitle);
-        Elements newsText = doc.select(cssQueryContent);
+        if (doc != null) {
+            article.setTitle(doc.select("").text());
+            //TODO
+//            article.setContent();
+//            article.setContent();
+//            article.setContent();
+//            article.setContent();
+//            article.setContent();
+            article.setUpdateTme(LocalDate.now().toString());
+        }
+        return article;
+    }
 
-        String path = "./" + newsTitle;
-        //TODO 这里的文件名写入可能报错
-        FileUtils.saveStringToFile(newsText.text(), path);
+    private List<String> getUrls(String baseUrl) {
+        List<String> urls = new ArrayList<>();
+        //TODO
 
-        return null;
+        return urls;
+    }
+
+    private boolean saveArticleToDatabase(Article article) {
+        if (article == null) {
+            return false;
+        }
+
+        return true;
     }
 
 }
