@@ -3,7 +3,7 @@ package com.rrdssfgcs.interviewcheatsheet.data.spider;
 import org.junit.Test;
 
 public class NowcoderSpiderTest {
-    NowcoderSpider nowcoderSpider = new NowcoderSpider();
+    private NowcoderSpider nowcoderSpider = new NowcoderSpider();
 
     @Test
     public void getArticleFromUrl() throws Exception {

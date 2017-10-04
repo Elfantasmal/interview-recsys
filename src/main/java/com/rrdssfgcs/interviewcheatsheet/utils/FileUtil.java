@@ -12,7 +12,7 @@ import java.io.IOException;
  * @author parker
  * @time 2017-10-02 22:04
  **/
-public class FileUtils {
+public class FileUtil {
     public static void saveStringToFile(String string, String path) {
         if (StringUtils.isBlank(string) || StringUtils.isBlank(path)) {
             return;

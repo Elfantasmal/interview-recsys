@@ -1,5 +1,6 @@
 package com.rrdssfgcs.interviewcheatsheet.data.spider;
 
+import com.rrdssfgcs.interviewcheatsheet.entity.Article;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;

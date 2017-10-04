@@ -1,5 +1,7 @@
 package com.rrdssfgcs.interviewcheatsheet.data.spider;
 
+import com.rrdssfgcs.interviewcheatsheet.entity.Article;
+
 /**
  * 数据抓取抽象类
  *

@@ -1,4 +1,4 @@
-package com.rrdssfgcs.interviewcheatsheet.data.spider;
+package com.rrdssfgcs.interviewcheatsheet.entity;
 
 import java.io.Serializable;
 
