@@ -6,7 +6,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +47,7 @@ public class NowcoderSpider extends BaseSpider {
 //            article.setContent();
 //            article.setContent();
 //            article.setContent();
-            article.setUpdateTme(LocalDate.now().toString());
+//            article.setUpdateTime(LocalDate.now());
         }
         return article;
     }
@@ -56,7 +55,7 @@ public class NowcoderSpider extends BaseSpider {
     private List<String> getUrls(String baseUrl) {
         List<String> urls = new ArrayList<>();
         //TODO
-
+        urls.add("asdasd");
         return urls;
     }
 

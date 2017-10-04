@@ -16,7 +16,7 @@ public class Article implements Serializable {
     private String source;
     private String url;
 
-    private String updateTme;
+    private String updateTime;
     private String insertTime;
 
     public String getDocid() {
@@ -67,12 +67,12 @@ public class Article implements Serializable {
         this.url = url;
     }
 
-    public String getUpdateTme() {
-        return updateTme;
+    public String getUpdateTime() {
+        return updateTime;
     }
 
-    public void setUpdateTme(String updateTme) {
-        this.updateTme = updateTme;
+    public void setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
     }
 
     public String getInsertTime() {
@@ -92,7 +92,7 @@ public class Article implements Serializable {
                 ", author='" + author + '\'' +
                 ", source='" + source + '\'' +
                 ", url='" + url + '\'' +
-                ", updateTme='" + updateTme + '\'' +
+                ", updateTime='" + updateTime + '\'' +
                 ", insertTime='" + insertTime + '\'' +
                 '}';
     }

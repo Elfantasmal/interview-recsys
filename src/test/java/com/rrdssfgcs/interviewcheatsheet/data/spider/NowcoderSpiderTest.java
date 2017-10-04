@@ -8,7 +8,7 @@ public class NowcoderSpiderTest {
     @Test
     public void getArticleFromUrl() throws Exception {
         //TODO
-        System.out.println(nowcoderSpider.getArticleFromUrl("").toString());
+        System.out.println(nowcoderSpider.getArticleFromUrl("http://www.nowcoder.com/discuss/52113?type=2&order=0&pos=9&page=1").toString());
     }
 
 }
