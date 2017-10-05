@@ -1,9 +1,14 @@
-package com.rrdssfgcs.interviewcheatsheet.data.spider;
+package com.rrdssfgcs.interviewcheatsheet.spider;
 
 import org.junit.Test;
 
 public class NowcoderSpiderTest {
     private NowcoderSpider nowcoderSpider = new NowcoderSpider();
+
+    @Test
+    public void update() throws Exception {
+        nowcoderSpider.update();
+    }
 
     @Test
     public void getUrls() throws Exception {

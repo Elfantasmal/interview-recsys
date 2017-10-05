@@ -19,6 +19,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="./mappers/ArticleMapper.xml"/>
+        <mapper class="com.rrdssfgcs.interviewcheatsheet.dao.ArticleMapper"/>
     </mappers>
 </configuration>
