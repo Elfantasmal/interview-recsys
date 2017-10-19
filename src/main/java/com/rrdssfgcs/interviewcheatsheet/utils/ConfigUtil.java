@@ -16,7 +16,7 @@ import java.util.TimerTask;
  **/
 public class ConfigUtil {
 
-    private static final String confFile = "./conf/conf.properties";
+    private static final String CONF_FILE_PATH = "./conf/conf.properties";
     private static Configurations configs = new Configurations();
     private static Configuration config = new PropertiesConfiguration();
 
@@ -33,7 +33,7 @@ public class ConfigUtil {
 
     private static void update() {
         try {
-            config = configs.properties(confFile);
+            config = configs.properties(CONF_FILE_PATH);
             // access configuration properties
         } catch (ConfigurationException e) {
             e.printStackTrace();

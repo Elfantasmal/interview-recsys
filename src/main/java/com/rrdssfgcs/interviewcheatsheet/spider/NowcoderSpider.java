@@ -81,9 +81,12 @@ public class NowcoderSpider extends BaseSpider {
         }
         //从获得的网页代码中找出第一个“面经”的链接地址
         Element doc2 = null;
-        doc2 = doc1.select("div.discuss-main").get(0);//找到相关元素串
-        Element link = doc2.select("a").first();//查找第一个a元素
-        String linkHref = "http://www.nowcoder.com" + link.attr("href"); // 取得链接地址
+        //找到相关元素串
+        doc2 = doc1 != null ? doc1.select("div.discuss-main").get(0) : null;
+        //查找第一个a元素
+        Element link = doc2.select("a").first();
+        // 取得链接地址
+        String linkHref = "http://www.nowcoder.com" + link.attr("href");
         urls.add(linkHref);
         return urls;
     }
