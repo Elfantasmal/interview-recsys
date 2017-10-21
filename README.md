@@ -136,8 +136,8 @@
     * 伪代码 
 * KNN
     * 伪代码
-    * k近邻算法k的选择对结果的影响？[[滴滴]]((https://github.com/rrdssfgcs/interview-cheatsheet/blob/master/refs/滴滴-2016-滴滴腾讯算法岗面经分享.md))
-    * 偏倚方差分解，以k近邻为例，分析k的变化对偏倚方差的影响？[[滴滴]]((https://github.com/rrdssfgcs/interview-cheatsheet/blob/master/refs/滴滴-2016-滴滴腾讯算法岗面经分享.md))
+    * k近邻算法k的选择对结果的影响？
+    * 偏倚方差分解，以k近邻为例，分析k的变化对偏倚方差的影响？
 * 朴素贝叶斯
 * 感知机
     * 推导
@@ -145,13 +145,13 @@
     * 推导
 * SVM
     * 推导
-    * SVM有哪些核函数？如何选择？[[阿里]](https://github.com/rrdssfgcs/interview-cheatsheet/blob/master/refs/阿里-腾讯-网易-蘑菇街-2016-数据挖掘数据研发面经分享.md)
+    * SVM有哪些核函数？如何选择？
     * KKT条件
 * 决策树
     * 划分标准
 * 随机森林RF
     * 伪代码
-    * 随机森林与图像分类的结合 [[滴滴]](https://github.com/rrdssfgcs/interview-cheatsheet/blob/master/refs/滴滴-腾讯-2016-滴滴腾讯算法岗面经分享) 
+    * 随机森林与图像分类的结合
 * GBDT
     * 推导/伪代码
 * boosting
@@ -196,7 +196,7 @@ To be done...
 * 10_二进制中1的个数
 * 13_在O1时间删除链表节点
 * **14_调整数组顺序使奇数位于偶数前面**
-* 15_链表中倒数第k个结点[[阿里]](https://github.com/rrdssfgcs/interview-cheatsheet/blob/master/refs/阿里-2016-算法工程师四面(三轮技术+hr面)详细面经.md)
+* 15_链表中倒数第k个结点
 * **16_反转链表**
 * 17_合并两个排序的链表
 * 19_二叉树的镜像
@@ -228,9 +228,9 @@ To be done...
 #### C++
 1. 虚函数相关问题
 2. 手写实现Vector
-3. const/static关键字[[阿里]](https://github.com/rrdssfgcs/interview-cheatsheet/blob/master/refs/阿里-2016-算法工程师四面(三轮技术+hr面)详细面经.md)
+3. const/static关键字
 4. malloc/free和new/delete
-5. 重载VS重写VS隐藏[[阿里]](https://github.com/rrdssfgcs/interview-cheatsheet/blob/master/refs/阿里-2016-算法工程师四面(三轮技术+hr面)详细面经.md)
+5. 重载VS重写VS隐藏
 6. 容器类
 7. 友元
 
@@ -248,8 +248,8 @@ To be done...
 
 #### 计算机网络
 
-1. TCP三次握手[[百度]](https://github.com/rrdssfgcs/interview-cheatsheet/blob/master/refs/百度-2016-周六百度数据挖掘三面.md)，四次挥手
-2. OSI七层网络模型[[阿里]](https://github.com/rrdssfgcs/interview-cheatsheet/blob/master/refs/阿里-2016-算法工程师四面(三轮技术+hr面)详细面经.md)[[华为]](https://github.com/rrdssfgcs/interview-cheatsheet/blob/master/refs/华为-2016-华为京津东北地区校招面经)
+1. TCP三次握手，四次挥手
+2. OSI七层网络模型
 2. TCP/UDP协议基础
 
 #### 设计模式
