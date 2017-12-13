@@ -1,6 +1,6 @@
 package com.rrdssfgcs.interviewcheatsheet.linearregression;
 
-import Jama.Matrix;
+import com.rrdssfgcs.interviewcheatsheet.utils.CsvtoMatrix.Matrix;
 import com.rrdssfgcs.interviewcheatsheet.utils.CSVUtils;
 import java.util.List;
 
