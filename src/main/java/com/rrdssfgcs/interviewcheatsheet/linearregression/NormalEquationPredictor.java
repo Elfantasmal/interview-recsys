@@ -1,7 +1,8 @@
 package com.rrdssfgcs.interviewcheatsheet.linearregression;
 
-import com.rrdssfgcs.interviewcheatsheet.utils.CsvtoMatrix.Matrix;
+import Jama.Matrix;
 import com.rrdssfgcs.interviewcheatsheet.utils.CSVUtils;
+
 import java.util.List;
 
 public class NormalEquationPredictor {
